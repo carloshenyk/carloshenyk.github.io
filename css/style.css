@@ -229,11 +229,19 @@ footer{
 }
 nav .icon{
     display: none;
-    font-size: 40px;
+    font-size: 50px;
     width: 30px;
+    margin-top: 10px;
 }
+
+
+/*************************************************************
+        CRIANDO A RESPOSIVIDADE DO SITE EM ATÉ 820PX
+**************************************************************/
+
 @media (max-width:820px) {
     .sobre .texto-s{
+       
         width: 80%;
     }
     .formacao{
@@ -249,8 +257,15 @@ nav .icon{
     }
     
 }
+
+/*************************************************************
+        CRIANDO A RESPOSIVIDADE DO SITE EM ATÉ 600PX
+**************************************************************/
+
 @media (max-width:600px){
-   
+    .secoes-mobile{
+        margin-top: 10rem;
+    }
     .experiencia{
         display: flex;
         flex-direction: column;
@@ -273,16 +288,7 @@ nav .icon{
     nav .icon{
         display: block;  
     }
-    label span{
-        position: absolute;
-        display: block;
-        height: 5px;
-        width: 100%;
-        border-radius: 30px;
-        background: #f16234;
-        transition: 0.25s ease-in-out;
-      }
-      
+     
     nav ul{
         position: fixed;
         top: 63px;
@@ -293,19 +299,27 @@ nav .icon{
         text-align: center;
         display: block;
         transition: all 0.3s ease;
+        padding-bottom: 10px;
     }
     nav ul.open{
         left: 0;
     }
     nav ul li{
         width: 100%;
-        margin: 50px 0;
+        margin: 20px 0;
     }
     nav ul li a{
         font-size: 23px;
+        display: block;
     }
     nav ul li a:hover{
-        background: none;
-        color: #f88f06;
+        background:#fff;
+        color: #000;
     }
 }
+
+
+/*******************************************************
+                    ANIMAÇÃO DO BANNER
+********************************************************/
+  
