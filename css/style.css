@@ -72,7 +72,13 @@ header .nome{
     font-size: 60pt;
     font-size: 7vw;
     font-weight: 700;
-    animation: animatext 5s ease-in-out forwards;
+    animation: animatext 10s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+header .shadow{
+    animation-name: shadow;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
 }
 
 header .banner{
@@ -349,10 +355,29 @@ nav .icon{
  @keyframes animatext {
     0%{
         color:#000;
+        
+    }
+    50%{
+        color:#fff;
+        text-shadow: 0px 0px 0px white, 0px 0px 0px white, 0px 0px 0px rgba(253, 252, 252, 0.603)
     }
     100%{
-        color:#fff;
-    }
+        text-shadow: 0px 0px 70px white, 0px 0px 70px white, 0px 0px 70px rgba(253, 252, 252, 0.603);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #fff;
+        color:#000;
+    } 
+}
+
+@keyframes shadow {
+    0%{
+        text-shadow: 0px 0px 0px white, 0px 0px 0px white, 0px 0px 0px white;
+       
+    } 
+    100%{
+        text-shadow: 0px 0px 50px white, 0px 0px 50px white, 0px 0px 50px white;
+       
+    } 
 }
 
 @keyframes animate {
