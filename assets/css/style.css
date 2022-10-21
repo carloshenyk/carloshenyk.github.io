@@ -1,0 +1,128 @@
+body{
+    background: #222;
+}
+
+/* STYLO DO DESTAQUE */
+.principal{
+    width: 100%;
+    padding: 30px 100px;
+    margin-top: 10vh;
+}
+.principal__destaque{
+    display: flex;
+}
+.principal__destaque___texto,
+.principal__destaque___imagen{
+    width: 50%;
+}
+.principal__destaque___imagen--img{
+    width: 450px;
+    height: 450px;
+    background: url(../img/eu.jpeg) center / cover no-repeat;
+    border-radius: 50%;
+}
+.principal__destaque___texto h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.principal__destaque___texto{
+    font-size: 1.5rem;
+    color: #999;
+}
+.principal__destaque___texto b{
+    color: #07975b;
+}
+.principal__destaque___texto___ul{
+    display: flex;
+    gap: 2rem;
+}
+.principal__destaque___texto___ul a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+/* STYLO DO SOBRE */
+
+.principal__sobre{
+    width: 100%;
+    min-height: 30vh;
+    color: #fff;
+    margin: 20px 0;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    padding: 1.5rem;
+}
+.principal__sobre p{
+    width: 50%;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-style: italic;
+}
+/* STYLO DO SKILLS E HOBBIES*/
+
+.principal__skills, .principal__hobbies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.principal__skills h2, .principal__hobbies h2{
+    color: #999;
+}
+.principal__skills___conteudo, .principal__hobbies___conteudo{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    color: #999;
+}
+.principal__skills___conteudo div, .principal__hobbies___conteudo div{
+    width: 10rem;
+    height: 10rem;
+    background: rgba(153, 153, 153, 0.199);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:.5rem ;
+    font-weight: 600;
+    font-size: 12px;
+}
+.principal__skills___conteudo div img,
+.principal__hobbies___conteudo div ion-icon,
+.principal__skills___conteudo div ion-icon{
+    width: 4rem;
+    font-size: 4rem;
+    color: #056d47ff;
+}
+/* STYLO DO FORMAÇÃO*/
+.principal__formacao{
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    color: #999;
+}
+.principal__formacao h3{
+    color: #fff;
+}
+.principal_formacao___conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    color: #999;
+}
+.principal__formacao__graduacao img, .principal__formacao__curso img{
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.774);
+    padding: 1.5rem;
+    width: 22vw;
+    height: 250px;
+}
