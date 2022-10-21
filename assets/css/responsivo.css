@@ -95,6 +95,9 @@
     .principal__destaque___imagen--img{
         width: 100%;
     }
+    .principal__formacao__graduacao img, .principal__formacao__curso img{
+        width: 90vw;
+    }
 }
 @media (max-width:750px){
     .principal__projeto___secao____imagem img{
