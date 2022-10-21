@@ -35,6 +35,7 @@ body{
 .principal__destaque___texto___ul{
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 .principal__destaque___texto___ul a{
     color: #fff;
