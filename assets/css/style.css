@@ -46,6 +46,17 @@ body{
     color: #fff;
     font-size: 1.2rem;
 }
+.principal__destaque___texto___ul li a{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+.principal__destaque___texto___ul .social{
+    width: 20px;
+    filter: opacity(.5) drop-shadow(0 0 0 white);
+    filter: contrast(10%);
+    z-index: -2;
+}
 /* STYLO DO SOBRE */
 
 .principal__sobre{
@@ -76,6 +87,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
+
 }
 .principal__skills h2, .principal__hobbies h2{
     color: #999;
@@ -104,6 +116,7 @@ body{
     width: 4rem;
     font-size: 4rem;
     color: #056d47ff;
+    z-index: -1;
 }
 /* STYLO DO FORMAÇÃO*/
 .principal__formacao{
